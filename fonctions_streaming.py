@@ -21,7 +21,7 @@ data = {
     "promptObject": {
         "prompt": "Who are you, in 3 words.",
         "isMixed": False,
-        "webSearch": True,
+        "webSearch": False,
         "numOfSite": 1,
         "maxWord": 500
     }
@@ -76,11 +76,11 @@ def print_streaming(resp):
 
     print("---\nStream ended.")
     # afficher la réponse reconstituée si besoin
-    full = "".join(reconstructed).strip()
-    if full:
-        print("\n=== Reconstructed full response ===")
-        print(full)
-        print("=== end reconstructed ===\n")
+    #full = "".join(reconstructed) # .strip()
+    #if full:
+    #   print("\n=== Reconstructed full response ===")
+    #   print(full)
+    #   print("=== end reconstructed ===\n")
 
 def call_streaming():
     print("Calling streaming endpoint...")
